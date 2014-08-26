@@ -70,15 +70,13 @@ body {
 
 .instructorLogo{
  position: relative;
- text-align: center;
- right: 12rem;
+ left: 12rem;
  
 }
 
 .studentLogo{
  position: relative;
- text-align: center;
- right: 24rem;
+ left: 24rem;
 }
 
 .betaButton {
