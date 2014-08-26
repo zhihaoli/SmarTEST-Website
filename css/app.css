@@ -59,7 +59,7 @@ body {
     font-family: ProximaNova, sans-serif;
     color: #fff;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -moz-webkit-animation-delay: 1s;
@@ -69,7 +69,7 @@ body {
 .betaButton {
   background: white;
   padding: 1.875rem;
-  color: rgba(218, 68, 83, 0.5);
+  color: rgba(218, 68, 83, 1);
   font-family: ProximaNova, sans-serif;
   text-shadow: none;
   -webkit-text-shadow: none;
