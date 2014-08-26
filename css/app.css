@@ -68,9 +68,14 @@ body {
 
 
 
-.Logo2{
+.instructorLogo{
  position: relative;
- left: 8.25rem
+ left: 10.25rem
+}
+
+.studentLogo{
+ position: relative;
+ left: 16rem
 }
 
 .betaButton {
