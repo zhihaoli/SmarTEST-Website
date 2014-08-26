@@ -68,14 +68,14 @@ body {
 
 
 
-.instructorLogo{
+.Logo1{
   position: absolute;
-  left: 250px;
+  left: 300px;
 }
 
-.studentLogo{
+.Logo2{
  position: absolute
- left: 750px
+ left: 600px
 }
 
 .betaButton {
