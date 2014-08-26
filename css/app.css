@@ -74,8 +74,9 @@ body {
 }
 
 .Logo2{
- position: absolute
- left: 700px;
+ position: relative;
+ margin: 0 auto
+ top: 6.25rem
 }
 
 .betaButton {
