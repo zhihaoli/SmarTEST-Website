@@ -196,9 +196,9 @@ body {
     font-size: 1.25rem; }
 
 @media only screen and (max-width: 30em) {
-  #iphone5s.black .device {
-    width: 260px;
-    height: 594px !important; } }
+  #ipad.silver.landscape .device {
+    width: 594px;
+    height: 790px !important; } }
 /*
   Shared Classes and utilities
 */
