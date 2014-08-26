@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<html class="no-js" lang="en" >
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Palm Note</title>
+        <!-- The main foundation css files -->
+        <link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+        <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+        <!-- The main app css file auto-generated with Sass -->
+        <link rel="stylesheet" href="css/app.css">
+        <!-- Slick -->
+        <link rel="stylesheet" href="bower_components/slick/slick/slick.css">
+        <!-- Css animations -->
+        <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+        <!-- Modernizr main js file -->
+        <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+        <!-- Devices Css -->
+        <link rel="stylesheet" href="bower_components/devices.css/assets/style.css">
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500' rel='stylesheet' type='text/css'>
+        <!-- IonIcons -->
+        <link href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css" rel="stylesheet">
+    </head>
+    <body ng-app="palmNoteWebsite" class="animated fadeIn">
+        <header class="topHeader" ng-controller="headerCtrl" id="top">
+            <section class="row">
+                <section class="columns small-12 medium-6">
+                    <ul class="topMenu">
+                        <li><a href="http://palmnote.github.io" class="active"><i class="ion-ios7-home"></i> Intro</a></li>
+                        <li><a href="http://palmnote.github.io/blog"><i class="ion-compose"></i> Blog</a></li>
+                    </ul>
+                </section>
+                <section class="columns small-12 medium-6">
+                    <ul class="topMenu floatRight">
+                        <li><a href="https://www.facebook.com/sharer/sharer.php?s=100&p%5Btitle%5D=Palm%20Note&p%5Bsummary%5D=A%20minimal%20note%20taking%20app%20built%20for%20speed&p%5Burl%5D=http://palmnote.github.io&p%5Bimages%5D%5B0%5D=http://palmnote.github.io/img/logo-1.png"><i class="ion-social-facebook"></i> Share</a></li>
+                        <li><a href="https://twitter.com/intent/tweet?button_hashtag=PalmNote&text=Check this out: http://palmnote.github.io"><i class="ion-social-twitter"></i> Tweet</a></li>
+                    </ul>
+                </section>
+            </section>
+            <section class="row">
+                <h1 class="animated bounceInDown">Palm Note</h1>
+                <p class="animated bounceInLeft"> A minimal note taking app built for speed.</p>
+                <section>
+                    <a target="_blank" href="http://eepurl.com/1KcRb" class="betaButton animated fadeInUp">Join our private beta</a>
+                    <div class="scrollIconContainer">
+                        <i class="ion-mouse animated fadeIn scrollIcon"></i>
+                    </div>
+                </section>
+            </section>
+        </header>
+        <section class="mainContent">
+            <section class="row">
+                <section class="columns small-12">
+                    <section class="screenShotSlider">
+                        <div>
+                            <h2>Introducing Palm Note</h2>
+                            <p>A minimal note taking app built for speed.</p>
+                        </div>
+                        <div>
+                            <h2>Stay Organized</h2>
+                            <p>Stay organized with the Palm Note's different note types.</p>
+                        </div>
+                        <div>
+                            <h2>Real-time note syncing</h2>
+                            <p>All your settings and notes get synced across all of your devices in real-time.</p>
+                        </div>
+                        <div>
+                            <h2>Beautifully Designed</h2>
+                            <p>Palm Note looks great on all of your devices.</p>
+                        </div>
+                        <div>
+                            <h2>Well Integrated</h2>
+                            <p>Palm Note is well integrated with the tools that you love.</p>
+                        </div>
+                    </section>
+                </section>
+                <section class="columns small-12">
+                    <div id="iphone5s" class="silver">
+                            <div class="device" style="height:701px;">
+                                <div class="inner"></div>
+                                <div class="sleep"></div>
+                                <div class="volume"></div>
+                                <div class="camera"></div>
+                                <div class="top-bar"></div>
+                                <div class="sensor"></div>
+                                <div class="speaker"></div>
+                                <div class="screen">
+                                    <section class="screenShotSlider">
+                                        <div>
+                                            <img src="img/ss2.png">
+                                        </div>
+                                        <div>
+                                            <img src="img/ss4.png">
+                                        </div>
+                                        <div>
+                                            <img src="img/ss5.png">
+                                        </div>
+                                        <div>
+                                            <img src="img/ss1.png">
+                                        </div>
+                                        <div>
+                                            <img src="img/ss6.png">
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="bottom-bar"></div>
+                                <div class="home"></div>
+                            </div>
+                    </div>
+                </section>
+                <section class="columns small-12 medium-4">
+
+                </section>
+            </section>
+        </section>
+        <footer class="bottomFooter">
+            <section class="row">
+                <p>Don't bother copying this page, we have already open sourced it on Github.</p>
+                <a target="_blank" href="https://github.com/PalmNote/palmnote.github.io" class="betaButton animated fadeInUp"><i class="ion-fork-repo"></i>Fork it on Github</a>
+
+            </section>
+        </footer>
+        <!-- Angularjs -->
+        <script src="bower_components/angularjs/angular.min.js"></script>
+        <!-- Main App JS -->
+        <script src="js/app.js"></script>
+        <!-- Foundation js files -->
+        <script src="bower_components/foundation/js/vendor/jquery.js"></script>
+        <script src="bower_components/foundation/js/foundation.min.js"></script>
+        <!-- Slick -->
+        <script src="bower_components/slick/slick/slick.min.js"></script>
+        <script>
+            // Initializing slick
+            $(document).ready(function(){
+                $('.screenShotSlider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 4000
+                });
+                $('.contentSlider').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 7000
+                });
+
+            });
+            // Initializing the foundation
+            $(document).foundation();
+        </script>
+    </body>
+</html>
