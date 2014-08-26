@@ -19,7 +19,7 @@ html, body {
   margin: 0; }
 
 body {
-  background: url(../img/image1.png) no-repeat center center fixed;
+  background: url(../img/image3.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -178,7 +178,7 @@ body {
     font-size: 1.25rem; }
 
 @media only screen and (max-width: 30em) {
-  #iphone5s.gold .device {
+  #iphone5s.black .device {
     width: 260px;
     height: 594px !important; } }
 /*
