@@ -34,7 +34,7 @@ body {
   min-height: 100%;
   background: linear-gradient(135deg, #505464, #404453);
   opacity: 0.4;
-  filter: alpha(opacity=40); }
+  filter: alpha(opacity=100); }
   .topHeader img {
     max-width: 100%;
     margin: 0 auto; }
@@ -55,12 +55,14 @@ body {
         font-size: 60px;
         font-size: 3.75rem; } }
   .topHeader p {
+    font-family: ProximaNova, sans-serif;
+    color: #fff;
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -moz-webkit-animation-delay: 1s;
-    font-size: 20px;
+    font-size: 60px;
     font-size: 1.25rem; }
 
 .betaButton {
