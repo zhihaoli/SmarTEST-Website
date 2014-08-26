@@ -68,19 +68,10 @@ body {
 
 
 
-.instructorLogo{
- position: relative;
- left: 12rem;
- 
-}
 
-.studentLogo{
- position: relative;
- left: 24rem;
-}
 
 .betaButton {
-  background: white;
+  background: url(../img/student_logo.png);
   padding: 1.875rem;
   color: rgba(218, 68, 83, 1);
   font-family: ProximaNova, sans-serif;
