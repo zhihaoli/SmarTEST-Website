@@ -66,14 +66,14 @@ body {
     font-size: 60px;
     font-size: 2.75rem; }
 
-studentLogo{
-
+.studentLogo{
+ position: absolute
+ left: 700px
 }
 
 .instructorLogo{
   position: absolute;
-  left: 500px;
-  right: 500px;
+  left: 400px;
 }
 
 .betaButton {
