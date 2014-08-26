@@ -1,0 +1,191 @@
+/*
+  Variables
+*/
+/*
+  Mixins, functions and other Sass utilities
+*/
+/*
+  Media queries
+*/
+/*
+  Main Code
+*/
+* {
+  -webkit-font-smoothing: antialiased; }
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: url(../img/image1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.topHeader {
+  min-height: 100%;
+  background: linear-gradient(135deg, #505464, #404453);
+  opacity: 0.9;
+  filter: alpha(opacity=90); }
+  .topHeader img {
+    max-width: 100%;
+    margin: 0 auto; }
+  .topHeader h1 {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 6.25rem;
+    font-size: 100px;
+    font-size: 6.25rem;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-webkit-animation-delay: 1s; }
+    @media only screen and (max-width: 40em) {
+      .topHeader h1 {
+        margin-top: 1.25rem;
+        font-size: 60px;
+        font-size: 3.75rem; } }
+  .topHeader p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-webkit-animation-delay: 1s;
+    font-size: 20px;
+    font-size: 1.25rem; }
+
+.betaButton {
+  background: white;
+  padding: 1.875rem;
+  color: rgba(218, 68, 83, 0.5);
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  text-shadow: none;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  border: none;
+  position: relative;
+  display: table;
+  margin: 0 auto;
+  top: 6.25rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-webkit-animation-delay: 3s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px; }
+  .betaButton:hover {
+    color: #fff;
+    background: rgba(218, 68, 83, 0.5); }
+  @media only screen and (max-width: 40em) {
+    .betaButton {
+      top: 1.25rem; } }
+  .betaButton i {
+    font-size: 30px;
+    font-size: 1.875rem;
+    margin-right: 0.625rem; }
+
+.scrollIconContainer {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0; }
+  @media only screen and (max-width: 40em) {
+    .scrollIconContainer {
+      display: none; } }
+
+.scrollIcon {
+  color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  display: table;
+  margin: 1px auto;
+  font-size: 50px;
+  font-size: 3.125rem;
+  animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-webkit-animation-delay: 3s; }
+
+.mainContent {
+  min-height: 100%;
+  background: #E6E9ED;
+  padding: 1.875rem 0.625rem;
+  opacity: 0.98;
+  filter: alpha(opacity=98); }
+  .mainContent h2 {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+    color: #656D78;
+    font-size: 50px;
+    font-size: 3.125rem; }
+  .mainContent p {
+    color: #AAB2BD;
+    font-size: 20px;
+    font-size: 1.25rem; }
+
+.screenShotSlider {
+  width: 100%;
+  position: absolute;
+  text-align: center; }
+
+.topMenu {
+  list-style: none;
+  padding: 0.625rem 0; }
+  .topMenu.floatRight {
+    direction: rtl; }
+    .topMenu.floatRight li {
+      direction: ltr; }
+    @media only screen and (max-width: 40em) {
+      .topMenu.floatRight {
+        direction: ltr;
+        display: none; } }
+  .topMenu li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 18px;
+    font-size: 1.125rem; }
+    .topMenu li a {
+      color: rgba(255, 255, 255, 0.5); }
+      .topMenu li a.active {
+        color: #fff; }
+      .topMenu li a i {
+        font-size: 24px;
+        font-size: 1.5rem; }
+      .topMenu li a:hover {
+        color: #fff; }
+    @media only screen and (max-width: 30em) {
+      .topMenu li {
+        font-size: 14px;
+        font-size: 0.875rem; }
+        .topMenu li i {
+          font-size: 18px;
+          font-size: 1.125rem; } }
+
+.bottomFooter {
+  background: #434A54;
+  min-height: 25rem;
+  padding: 1.25rem 0;
+  opacity: 0.95;
+  filter: alpha(opacity=95); }
+  .bottomFooter p {
+    color: #Fff;
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.25rem; }
+
+@media only screen and (max-width: 30em) {
+  #iphone5s.gold .device {
+    width: 260px;
+    height: 594px !important; } }
+/*
+  Shared Classes and utilities
+*/
+/*
+  Foundation and other frameworks modifications
+*/
+.slick-prev, .slick-next {
+  display: none !important; }

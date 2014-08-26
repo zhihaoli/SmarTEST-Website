@@ -1,0 +1,265 @@
+/*
+  Variables
+*/
+
+$headingFontFamily : 'Ubuntu', Helvetica, Arial, sans-serif;
+
+/*
+  Mixins, functions and other Sass utilities
+*/
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin animationDelay($time) {
+  animation-delay: $time;
+  -webkit-animation-delay: $time;
+  -moz-webkit-animation-delay: $time;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -o-border-radius:$radius;
+}
+
+@mixin box-shadow($args) {
+  -moz-box-shadow: $args;
+  -webkit-box-shadow: $args;
+  box-shadow: $args;
+}
+
+/*
+  Media queries
+*/
+
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}
+
+/*
+  Main Code
+*/
+
+* {
+  -webkit-font-smoothing:antialiased;
+}
+
+html, body {
+  height:100%;
+  padding:0;
+  margin:0;
+}
+
+body {
+  background: url(../img/image1.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.topHeader {
+  min-height:100%;
+  background: linear-gradient(135deg, #505464, #404453);
+  @include opacity(0.90);
+  img {
+    max-width: 100%;
+    margin:0 auto;
+  }
+  h1 {
+    font-family: $headingFontFamily;
+    color:#fff;
+    text-align: center;
+    margin:0 auto;
+    margin-top: calculateRem(100px);
+    @include  font-size(100px);
+    @include animationDelay(1s);
+    @include bp-medium {
+      margin-top: calculateRem(20px);
+      @include font-size(60px);
+    }
+  }
+  p {
+    text-align: center;
+    color:rgba(255,255,255,0.5);
+    @include animationDelay(1s);
+    @include  font-size(20px);
+  }
+}
+
+.betaButton {
+  background:rgba(255,255,255, 1);
+  padding: calculateRem(30px);
+  color: rgba(218,68,83, 0.5);
+  font-family: $headingFontFamily;
+  text-shadow:none;
+  -webkit-text-shadow:none;
+  -moz-text-shadow:none;
+  border:none;
+  position: relative;
+  display: table;
+  margin:0 auto;
+  top: calculateRem(100px);
+  @include font-size(20px);
+  @include animationDelay(3s);
+  @include border-radius(3px);
+  &:hover {
+    color:#fff;
+    background: rgba(218,68,83, 0.5);
+  }
+  @include bp-medium {
+    top:calculateRem(20px);
+  }
+  i {
+    @include font-size(30px);
+    margin-right: calculateRem(10px);
+  }
+
+}
+.scrollIconContainer {
+  position: absolute;
+  bottom:10px;
+  left:0;
+  right:0;
+  @include bp-medium {
+    display: none;
+  }
+}
+.scrollIcon {
+  color:rgba(255,255,255,0.3);
+  position: relative;
+  display: table;
+  margin:1px auto;
+  @include font-size(50px);
+  @include animationDelay(3s);
+}
+
+.mainContent {
+  min-height: 100%;
+  background: #E6E9ED;
+  padding:calculateRem(30px) calculateRem(10px);
+  @include opacity(0.98);
+  h2 {
+    font-family: $headingFontFamily;
+    color:#656D78;
+    @include font-size(50px);
+  }
+  p {
+    color:#AAB2BD;
+    @include font-size(20px);
+  }
+}
+
+.screenShotSlider {
+  width:100%;
+  position: absolute;
+  text-align: center;
+}
+
+.topMenu {
+  list-style: none;
+  padding: calculateRem(10px) 0;
+  &.floatRight {
+    direction: rtl;
+    li {
+      direction: ltr;
+    }
+    @include bp-medium {
+      direction: ltr;
+      display: none;
+    }
+  }
+  li {
+    display: inline-block;
+    margin-right:30px;
+    @include font-size(18px);
+    a {
+      color:rgba(255,255,255,0.5);
+      &.active {
+        color:#fff;
+      }
+      i {
+        @include font-size(24px);
+      }
+      &:hover {
+        color:#fff;
+      }
+    }
+    @include bp-small {
+      @include font-size(14px);
+      i {
+        @include font-size(18px);
+      }
+    }
+  }
+}
+
+.bottomFooter {
+  background: #434A54;
+  min-height: calculateRem(400px);
+  padding:calculateRem(20px) 0;
+  @include opacity(0.95);
+  p {
+    color:#Fff;
+    text-align: center;
+    @include font-size(20px);
+  }
+}
+
+@include bp-small {
+  #iphone5s.gold .device {
+    width:260px;
+    height:594px !important;
+  }
+}
+
+/*
+  Shared Classes and utilities
+*/
+
+
+
+/*
+  Foundation and other frameworks modifications
+*/
+
+.slick-prev, .slick-next {
+  display:none !important;
+}
