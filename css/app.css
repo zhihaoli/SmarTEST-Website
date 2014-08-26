@@ -68,7 +68,8 @@ body {
 
 .studentLogo{
  position: absolute
- left: 200px
+ left: 800px
+ right: 400px
 }
 
 .instructorLogo{
