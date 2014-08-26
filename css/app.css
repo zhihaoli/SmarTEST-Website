@@ -68,15 +68,9 @@ body {
 
 
 
-.Logo1{
-  position: absolute;
-  left: 400px;
-}
-
 .Logo2{
  position: relative;
- margin: 0 auto
- top: 6.25rem
+ left: 6.25rem
 }
 
 .betaButton {
