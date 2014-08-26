@@ -46,6 +46,7 @@ body {
     margin-top: 6.25rem;
     font-size: 100px;
     font-size: 6.25rem;
+    opacity: 1;
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
     -moz-webkit-animation-delay: 1s; }
@@ -63,7 +64,7 @@ body {
     -webkit-animation-delay: 1s;
     -moz-webkit-animation-delay: 1s;
     font-size: 60px;
-    font-size: 1.25rem; }
+    font-size: 3.25rem; }
 
 .betaButton {
   background: white;
