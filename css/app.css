@@ -25,6 +25,8 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
+@font-face { font-family: ProximaNova; src: url('Mark Simonson - Proxima Nova ScOsf Light.otf'); }
+
 .topHeader {
   min-height: 100%;
   background: linear-gradient(135deg, #505464, #404453);
@@ -34,7 +36,7 @@ body {
     max-width: 100%;
     margin: 0 auto; }
   .topHeader h1 {
-    font-family: sans-serif;
+    font-family: ProximaNova, sans-serif;
     color: #fff;
     text-align: center;
     margin: 0 auto;
@@ -62,7 +64,7 @@ body {
   background: white;
   padding: 1.875rem;
   color: rgba(218, 68, 83, 0.5);
-  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue-Light" sans-serif;
   text-shadow: none;
   -webkit-text-shadow: none;
   -moz-text-shadow: none;
