@@ -197,8 +197,8 @@ body {
 
 @media only screen and (max-width: 30em) {
   #iphone5s.silver .device {
-    width: 260px;
-    height: 650px !important; } }
+    width: 350px;
+    height: 594px !important; } }
 /*
   Shared Classes and utilities
 */
