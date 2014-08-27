@@ -196,9 +196,9 @@ body {
     font-size: 1.25rem; }
 
 @media only screen and (max-width: 30em) {
-  #iphone5s.gold .device {
+  #iphone5s.silver .device {
     width: 260px;
-    height: 594px !important; } }
+    height: 650px !important; } }
 /*
   Shared Classes and utilities
 */
