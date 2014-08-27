@@ -121,6 +121,8 @@ body {
   -moz-webkit-animation-delay: 2s; }
 
 .mainContent {
+  position: relative;
+  text-align: center;
   min-height: 100%;
   padding: 1.875rem 0.625rem;
   opacity: 0.98;
