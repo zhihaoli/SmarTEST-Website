@@ -114,9 +114,9 @@ body {
   margin: 1px auto;
   font-size: 50px;
   font-size: 3.125rem;
-  animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  -moz-webkit-animation-delay: 3s; }
+  animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -moz-webkit-animation-delay: 2s; }
 
 .mainContent {
   min-height: 100%;
