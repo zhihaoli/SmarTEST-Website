@@ -84,15 +84,12 @@ body {
 
 .betaButton {
   padding: 1.875rem;
-  text-shadow: none;
 filter: alpha(opacity=100);
-  -webkit-text-shadow: none;
-  -moz-text-shadow: none;
   border: none;
   position: relative;
   display: table;
   margin: 0 auto;
-  top: 6.25rem;
+  top: 3.25rem;
   font-size: 1.25rem;
   font-family: ProximaNovaAlt, sans-serif;
   animation-delay: 3s;
