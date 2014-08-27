@@ -32,6 +32,9 @@ body {
   background-size: cover; }
 
 
+.mainContent{
+ background: url(../img/image3.png) no-repeat center center fixed;
+}
 
 .topHeader {
   min-height: 100%;
