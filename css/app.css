@@ -110,10 +110,10 @@ body {
 
 .studentLogo {
   position: relative;
+  display: table;
   margin: 1px auto;
   font-size: 50px;
   font-size: 3.125rem;
-  float: center;
   animation-delay: 3s;
   -webkit-animation-delay: 3s;
   -moz-webkit-animation-delay: 3s; }
