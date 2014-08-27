@@ -195,7 +195,11 @@ body {
     font-size: 20px;
     font-size: 1.25rem; }
 
-
+#ipad.landscape .device {
+	height: 576px;
+	width: 768px;
+	padding: 25px 90px;
+}
 /*
   Shared Classes and utilities
 */
