@@ -195,10 +195,7 @@ body {
     font-size: 20px;
     font-size: 1.25rem; }
 
-@media only screen and (max-width: 30em) {
-  #ipad.landscape.silver .device {
-    width: 594px;
-    height: 790px !important; } }
+
 /*
   Shared Classes and utilities
 */
