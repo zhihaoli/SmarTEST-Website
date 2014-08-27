@@ -195,11 +195,10 @@ body {
     font-size: 20px;
     font-size: 1.25rem; }
 
-#ipad.landscape.silver .device {
-	height: 576px;
-	width: 768px;
-	padding: 25px 90px;
-}
+@media only screen and (max-width: 30em) {
+  #iphone5s.gold .device {
+    width: 260px;
+    height: 594px !important; } }
 /*
   Shared Classes and utilities
 */
