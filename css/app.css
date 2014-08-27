@@ -136,7 +136,7 @@ body {
 
 .screenShotSlider {
   width: 100%;
-  position: absolute;
+  position: relative;
   text-align: center; }
 
 .topMenu {
